@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de frutas y verduras</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     Esta es mi primera web app
@@ -32,20 +37,88 @@
    height="576"
    />
 
+   <br>
    <hr> <!-- esto es una linea con espacio -->
 
-   <form action="/formulario" method="get"> <!-- "get" para formularios cortos y "post" para formularios grandes -->
-    <label for="nombre"> ingrese su nombre </label>
+   <form action="/formulario" method="post"> <!-- "get" para formularios cortos y "post" para formularios grandes -->
+    <label for="nombre"> Ingrese su nombre </label>
     <input id="nombre" name="first_name" placeholder="Simón" type="text">
 
     <br> <!-- esto es un espacio -->
 
-    <label for="apellido"> ingrese su apellido </label>
+    <label for="apellido"> Ingrese su apellido </label>
     <input id="apellido" name="last_name" placeholder="Bolívar" type="text">
 
     <br>
 
-    <input type="submit">
+    <label for="remarks"> Ingrese sus comentarios </label>
+    <br>
+    <textarea name="remarks" id="remarks" cols="30" rows="10" placeholder="Ingresa tu comentario aquí"></textarea>
+
+    <br>
+
+    <input type="submit" value="enviar" enviar>
+
+    <br>
+
+    <button type="reset">tipo reset</button>
+
+    <br>
+
+    <button type="submit">tipo submit</button>
+
+    <!-- Listas sin ordenar -->
+    <ul>
+        <li> Elemento 1 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+        <li> Elemento 4 </li>
+    </ul>
+
+    <!-- Listas ordenadas -->
+    <ol>
+        <li value="90"> Elemento 1 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+        <li> Elemento 4 </li>
+    </ol>
+
+    <!-- Tablas -->
+    <!-- <table style="border: 1px solid black;"> -->
+    <table style="width: 300px;">
+        <thead>
+            <tr>
+                <th> Nombre </th>
+                <th> Apellido </th>
+                <th> Dirección </th>
+            </tr>
+        </thead>
+            
+        <thead>
+            <tr>
+                <td> Juancito </td>
+                <td> Perez </td>
+                <td> PLC </td>
+            </tr>
+        </thead>
+
+        <thead>
+            <tr>
+                <td> José </td>
+                <td> Armas </td>
+                <td> BNA </td>
+            </tr>
+        </thead>
+
+        <thead>
+            <tr>
+                <td> Juancho </td>
+                <td> Sí </td>
+                <td> BNC </td>
+            </tr>
+        </thead>
+
+    </table>
    </form>
 
 </body>
